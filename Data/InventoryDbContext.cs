@@ -8,7 +8,7 @@ namespace InventoryApp.Data
         public InventoryDbContext(DbContextOptions<InventoryDbContext> options) 
             : base(options) { }
 
-        
+        public DbSet<Warehouse> Warehouses { get; set; }
         public DbSet<Product> Products { get; set; }
     }
 }
