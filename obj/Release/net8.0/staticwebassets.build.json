@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "N40iLwRoiLeNPVY9vz1M+BmVUDVKLwgCKSdqJ3It2kY=",
+  "Source": "InventoryApp",
+  "BasePath": "_content/InventoryApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
