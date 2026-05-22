@@ -7,6 +7,7 @@ namespace InventoryApp.Models
         public string SKU { get; set; } = string.Empty;
         public int StockQuantity { get; set; }
         public decimal Pret { get; set; }
+        public int StockQuantity { get; set; }
         public int CategoryId { get; set; }
     }
 }

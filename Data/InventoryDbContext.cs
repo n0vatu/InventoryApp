@@ -10,6 +10,12 @@ namespace InventoryApp.Data
 
         public DbSet<Warehouse> Warehouses { get; set; }
         public DbSet<Product> Products { get; set; }
+<<<<<<< Updated upstream
         public DbSet<InventoryMovement> InventoryMovements { get; set; }
+=======
+        public DbSet<Warehouse> Warehouses { get; set; }
+        public DbSet<Supplier> Suppliers { get; set; }
+
+>>>>>>> Stashed changes
     }
 }

@@ -102,3 +102,4 @@ c:\Users\tdan1\InventoryApp\obj\Release\net8.0\refint\InventoryApp.dll
 c:\Users\tdan1\InventoryApp\obj\Release\net8.0\InventoryApp.pdb
 c:\Users\tdan1\InventoryApp\obj\Release\net8.0\InventoryApp.genruntimeconfig.cache
 c:\Users\tdan1\InventoryApp\obj\Release\net8.0\ref\InventoryApp.dll
+c:\Users\tdan1\InventoryApp\obj\Release\net8.0\InventoryApp.sourcelink.json
