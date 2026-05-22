@@ -23,14 +23,29 @@ namespace InventoryApp.Controllers
             return await _context.Products.ToListAsync();
         }
 
-        // POST: api/Products (Adaugă un produs nou)
         [HttpPost]
-        public async Task<ActionResult<Product>> PostProduct(Product product)
-        {
-            _context.Products.Add(product);
-            await _context.SaveChangesAsync();
+public async Task<ActionResult<Product>> PostProduct(Product product)
+{
+    _context.Products.Add(product);
+    await _context.SaveChangesAsync(); 
 
-            return CreatedAtAction(nameof(GetProducts), new { id = product.Id }, product);
-        }
+   
+    if (product.StockQuantity > 0)
+    {
+        var initialMovement = new InventoryMovement
+        {
+            ProductId = product.Id,
+            WarehouseId = 1, 
+            Quantity = product.StockQuantity,
+            Type = "Initial-Inbound",
+            Date = DateTime.UtcNow
+        };
+
+        _context.InventoryMovements.Add(initialMovement);
+        await _context.SaveChangesAsync();
+    }
+
+    return CreatedAtAction("GetProduct", new { id = product.Id }, product);
+}
     }
 }

@@ -10,5 +10,6 @@ namespace InventoryApp.Data
 
         public DbSet<Warehouse> Warehouses { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<InventoryMovement> InventoryMovements { get; set; }
     }
 }

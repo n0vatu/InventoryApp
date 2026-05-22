@@ -102,3 +102,6 @@ C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\refint\InventoryApp.dll
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.pdb
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.genruntimeconfig.cache
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\ref\InventoryApp.dll
+C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.sourcelink.json
+C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package-lock.json
+C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package.json
