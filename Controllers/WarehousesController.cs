@@ -32,5 +32,41 @@ namespace InventoryApp.Controllers
 
             return CreatedAtAction(nameof(GetWarehouses), new { id = warehouse.Id }, warehouse);
         }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutWarehouse(int id, Warehouse warehouse)
+        {
+            if (id != warehouse.Id)
+            {
+                return BadRequest("ID-urile nu se potrivesc.");
+            }
+
+            _context.Entry(warehouse).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Warehouses.Any(e => e.Id == id)) return NotFound();
+                throw;
+            }
+
+            return NoContent();
+        }
+
+        
+        [HttpPatch("{id}")]
+        public async Task<IActionResult> PatchWarehouse(int id, [FromBody] Dictionary<string, object> updates)
+        {
+            var warehouse = await _context.Warehouses.FindAsync(id);
+            if (warehouse == null) return NotFound();
+
+            if (updates.ContainsKey("name")) warehouse.Name = updates["name"]?.ToString() ?? warehouse.Name;
+            if (updates.ContainsKey("location")) warehouse.Location = updates["location"]?.ToString() ?? warehouse.Location;
+
+            await _context.SaveChangesAsync();
+            return NoContent();
+        }
     }
 }

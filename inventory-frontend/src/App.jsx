@@ -36,18 +36,17 @@ function App() {
     }
   };
 
-  const getStockInWarehouse = (productId, warehouseId) => {
-    const product = products.find(p => p.id === productId);
-    let stock = warehouseId === 1 && product ? product.stockQuantity : 0;
+const getStockInWarehouse = (productId, warehouseId) => {
+  let stock = 0;
 
-    movements.forEach(m => {
-      if (m.productId === productId && m.warehouseId === warehouseId) {
-        stock += m.quantity;
-      }
-    });
+  movements.forEach(m => {
+    if (m.productId === productId && m.warehouseId === warehouseId) {
+      stock += m.quantity;
+    }
+  });
 
-    return stock;
-  };
+  return stock;
+};
 
   const handleTransfer = async (e) => {
     e.preventDefault();

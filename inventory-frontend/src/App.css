@@ -117,3 +117,19 @@
 .toggle-btn:hover {
   background: #555;
 }
+.filter-container {
+  background: #1a1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  border: 1px dashed #555;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.supplier-badge {
+  font-size: 0.85em;
+  color: #3a9ad9;
+  margin-left: 5px;
+}

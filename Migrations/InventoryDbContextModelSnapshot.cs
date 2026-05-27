@@ -22,7 +22,6 @@ namespace InventoryApp.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-<<<<<<< Updated upstream
             modelBuilder.Entity("InventoryApp.Models.InventoryMovement", b =>
                 {
                     b.Property<int>("Id")
@@ -52,8 +51,6 @@ namespace InventoryApp.Migrations
                     b.ToTable("InventoryMovements");
                 });
 
-=======
->>>>>>> Stashed changes
             modelBuilder.Entity("InventoryApp.Models.Product", b =>
                 {
                     b.Property<int>("Id")
@@ -62,21 +59,17 @@ namespace InventoryApp.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("integer");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<decimal>("Pret")
-                        .HasColumnType("numeric");
-
-                    b.Property<string>("SKU")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("Pret")
+                        .HasColumnType("integer");
 
                     b.Property<int>("StockQuantity")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SupplierId")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
@@ -84,8 +77,6 @@ namespace InventoryApp.Migrations
                     b.ToTable("Products");
                 });
 
-<<<<<<< Updated upstream
-=======
             modelBuilder.Entity("InventoryApp.Models.Supplier", b =>
                 {
                     b.Property<int>("Id")
@@ -111,7 +102,6 @@ namespace InventoryApp.Migrations
                     b.ToTable("Suppliers");
                 });
 
->>>>>>> Stashed changes
             modelBuilder.Entity("InventoryApp.Models.Warehouse", b =>
                 {
                     b.Property<int>("Id")

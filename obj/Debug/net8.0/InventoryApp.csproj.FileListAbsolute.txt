@@ -1,5 +1,10 @@
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
 C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\appsettings.json
+C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package-lock.json
+C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package.json
 C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\InventoryApp.exe
 C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\InventoryApp.deps.json
 C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\InventoryApp.runtimeconfig.json
@@ -88,6 +93,7 @@ C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.AssemblyInfo.cs
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.csproj.CoreCompileInputs.cache
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.sourcelink.json
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\staticwebassets\msbuild.InventoryApp.Microsoft.AspNetCore.StaticWebAssets.props
@@ -102,9 +108,3 @@ C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\refint\InventoryApp.dll
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.pdb
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.genruntimeconfig.cache
 C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\ref\InventoryApp.dll
-C:\Users\tdan1\InventoryApp\obj\Debug\net8.0\InventoryApp.sourcelink.json
-<<<<<<< Updated upstream
-C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package-lock.json
-C:\Users\tdan1\InventoryApp\bin\Debug\net8.0\inventory-frontend\package.json
-=======
->>>>>>> Stashed changes
