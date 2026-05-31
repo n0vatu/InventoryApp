@@ -68,5 +68,19 @@ namespace InventoryApp.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteWarehouse(int id)
+    {
+        var warehouse = await _context.Warehouses.FindAsync(id);
+        if (warehouse == null)
+        {
+            return NotFound();
+        }
+
+        _context.Warehouses.Remove(warehouse);
+        await _context.SaveChangesAsync();
+
+        return NoContent();
+    }
     }
 }

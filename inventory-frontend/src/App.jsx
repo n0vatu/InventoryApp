@@ -88,7 +88,7 @@ const getStockInWarehouse = (productId, warehouseId) => {
       <hr />
 
       {/* 1. SECȚIUNEA HALE FILTRATE */}
-      <h2>Status Hale / Depozite </h2>
+      <h2>Status Hale / Depozite(Inventory Movement) </h2>
       <div className="warehouses-wrapper">
         {warehouses.map(w => (
           <div key={w.id} className="warehouse-card">
