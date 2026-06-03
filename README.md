@@ -1,0 +1,1 @@
+Aplicatie de inventory management
